@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+  font-family: 'League Spartan', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  background-color: hsl(180, 52%, 96%);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  
+  #root {
+    width: 80%;
+  }
+
+}

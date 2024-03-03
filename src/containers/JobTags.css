@@ -1,0 +1,22 @@
+.jobTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tag {
+    background-color: hsl(180, 31%, 95%);
+    border: none;
+    border-radius: 0.2rem;
+    color: hsl(180, 29%, 50%);
+    cursor: pointer;
+    font-weight: 800;
+    padding: 0.3rem 0.8rem;
+    transition: background-color .2s ease,
+                color .2s ease;
+}
+
+.tag:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 31%, 95%);
+}

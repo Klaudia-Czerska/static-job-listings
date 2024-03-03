@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.job-description-without-logo {
+    display: grid;
+    gap: 1rem;
+}
+
+.logo {
+    left: 2rem;
+    position: absolute;
+    top: 0;
+    transform: translate(0, -50%);
+}
+
+.company {
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+.new {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border-radius: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 0.5rem 0.3rem;
+    text-transform: uppercase;
+}
+
+.featured {
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+    border-radius: 1rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    padding: 0.5rem 0.5rem 0.3rem;
+    text-transform: uppercase;
+}
+
+.position {
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+}
+
+.position:hover {
+    color: hsl(180, 29%, 50%);
+}
+
+.job-info {
+    color: hsl(180, 8%, 52%);
+    display: flex;
+    gap: 2.7rem;
+}
+
+.job-info > * {
+    width: max-content;
+}
+
+.posted-at {
+    position: relative;
+}
+
+.posted-at::after {
+    background-color: hsl(180, 8%, 52%);
+    border-radius: 50%;
+    content: '';
+    height: 5px;
+    position: absolute;
+    right: -1.5rem;
+    top: 30%;
+    width: 5px;
+}
+
+.contract {
+    position: relative;
+}
+
+.contract::after {
+    background-color: hsl(180, 8%, 52%);
+    border-radius: 50%;
+    content: '';
+    height: 5px;
+    position: absolute;
+    right: -1.5rem;
+    top: 30%;
+    width: 5px;
+}
+
+@media screen and (min-width: 600px) {
+    hr {
+        display: none;
+    }
+
+    .job-description {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .job-description-without-logo {
+        gap: 0.5rem;
+    }
+
+    .logo {
+        left: 2rem;
+        margin-right: 2rem;
+        position: static;
+        top: 0;
+        transform: translate(0, 0);
+    }
+}
